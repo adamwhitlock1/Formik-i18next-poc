@@ -9,6 +9,7 @@ const resources = {
       headerText: "Welcome to React, react-i18next, Yup and Formik",
       emailRequired: "Email is a required field",
       emailPlaceHolder: "Enter your email",
+      emailLabel: "Email",
       reset: "reset",
       submit: "submit"
     }
@@ -18,6 +19,7 @@ const resources = {
       headerText: "Bienvenue a React and react-i18next, Yup et Formik",
       emailRequired: "Email est un champ requis",
       emailPlaceHolder: "Fournissez votre email",
+      emailLabel: "E-mail",
       reset: "réinitialiser",
       submit: "soumettre"
     }

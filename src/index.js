@@ -24,12 +24,10 @@ const App = () => {
           }, 500);
         }}
         validationSchema={Yup.object().shape({
-          email: Yup.string()
-            .email()
-            .required(t("emailRequired"))
+          email: Yup.string().email().required(t("emailRequired"))
         })}
       >
-        {props => {
+        {(props) => {
           const {
             values,
             touched,
@@ -44,7 +42,7 @@ const App = () => {
           return (
             <form onSubmit={handleSubmit}>
               <label htmlFor="email" style={{ display: "block" }}>
-                Email
+                {t("emailLabel") || "Email"}
               </label>
               <input
                 id="email"
