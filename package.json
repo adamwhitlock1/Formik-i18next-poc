@@ -1,0 +1,25 @@
+{
+  "name": "react-18next-yup-and-formik-basic-example-forked",
+  "version": "0.0.0",
+  "description": "An example form built with Formik and React",
+  "keywords": [],
+  "homepage": "https://codesandbox.io/s/zKrK5YLDZ",
+  "main": "index.js",
+  "dependencies": {
+    "formik": "1.5.2",
+    "i18next": "17.0.1",
+    "react": "16.8.6",
+    "react-dom": "16.8.6",
+    "react-i18next": "10.11.0",
+    "yup": "0.27.0"
+  },
+  "devDependencies": {
+    "react-scripts": "1.0.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}

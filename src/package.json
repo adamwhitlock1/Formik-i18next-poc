@@ -1,0 +1,16 @@
+{
+  "name": "internationalization-of-yup-validationschema-with-react-18next-and-formik-broken",
+  "version": "1.0.0",
+  "description": "An example form built with Formik and React",
+  "keywords": [],
+  "homepage": "https://codesandbox.io/s/zKrK5YLDZ",
+  "main": "index.js",
+  "dependencies": {
+    "formik": "1.5.2",
+    "i18next": "17.0.1",
+    "react": "16.8.6",
+    "react-dom": "16.8.6",
+    "react-i18next": "10.11.0",
+    "yup": "0.27.0"
+  }
+}
