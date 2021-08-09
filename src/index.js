@@ -58,7 +58,7 @@ const App = () => {
               </label>
               <input
                 id="email"
-                placeholder={t("email-placeholder")}
+                placeholder={i18n.t("email-placeholder")}
                 type="text"
                 value={values.email}
                 onChange={handleChange}
