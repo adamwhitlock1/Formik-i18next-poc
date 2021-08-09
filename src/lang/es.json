@@ -6,6 +6,8 @@
   "last-name-placeholder": "Ingrese su apellido",
   "email": "Email",
   "email-placeholder": "Introduce tu correo electrónico",
+  "email-required": "Correo electronico es requerido",
+  "email-invalid": "Por favor, introduce una dirección de correo electrónico válida",
   "reset": "reiniciar",
   "submit": "entregar"
 }

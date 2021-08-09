@@ -6,6 +6,8 @@
   "last-name-placeholder": "Ipasok ang iyong apelyido",
   "email": "Email",
   "email-placeholder": "Ipasok ang iyong Email",
+  "email-required": "Kailangan ng email",
+  "email-invalid": "Mangyaring maglagay ng wastong email address",
   "reset": "i-reset",
   "submit": "ipasa"
 }

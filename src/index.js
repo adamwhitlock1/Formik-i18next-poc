@@ -24,7 +24,9 @@ const App = () => {
           }, 500);
         }}
         validationSchema={Yup.object().shape({
-          email: Yup.string().email().required(t("emailRequired"))
+          email: Yup.string()
+            .email(t("email-invalid"))
+            .required(t("email-required"))
         })}
       >
         {(props) => {
