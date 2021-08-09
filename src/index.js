@@ -39,8 +39,18 @@ const App = () => {
             handleChange,
             handleBlur,
             handleSubmit,
-            handleReset
+            handleReset,
+            setFieldTouched
           } = props;
+
+          // this is needed to make sure validation messages
+          // are updated when the language is changec
+          i18n.on("languageChanged", () => {
+            Object.keys(errors).forEach((fieldName) => {
+              setFieldTouched(fieldName);
+            });
+          });
+
           return (
             <form onSubmit={handleSubmit}>
               <label htmlFor="email" style={{ display: "block" }}>
