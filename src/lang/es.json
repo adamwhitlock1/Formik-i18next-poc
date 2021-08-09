@@ -1,0 +1,11 @@
+{
+  "form-name": "Formulario De Ejemplo",
+  "first-name": "Primer nombre",
+  "first-name-placeholder": "Ponga su primer nombre",
+  "last-name": "Apellido",
+  "last-name-placeholder": "Ingrese su apellido",
+  "email": "Email",
+  "email-placeholder": "Introduce tu correo electrónico",
+  "reset": "reiniciar",
+  "submit": "entregar"
+}

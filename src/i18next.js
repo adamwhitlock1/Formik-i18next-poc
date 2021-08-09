@@ -1,18 +1,12 @@
 import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
+import en from "./lang/en.json";
 
 // the translations
 // (tip move them in a JSON file and import them)
 const resources = {
   en: {
-    translation: {
-      headerText: "Welcome to React, react-i18next, Yup and Formik",
-      emailRequired: "Email is a required field",
-      emailPlaceHolder: "Enter your email",
-      emailLabel: "Email",
-      reset: "reset",
-      submit: "submit"
-    }
+    translation: en
   },
   fr: {
     translation: {

@@ -1,0 +1,11 @@
+{
+  "form-name": "Halimbawa na Porma",
+  "first-name": "Pangalan",
+  "first-name-placeholder": "Ilagay ang iyong pangalan",
+  "last-name": "Huling pangalan",
+  "last-name-placeholder": "Ipasok ang iyong apelyido",
+  "email": "Email",
+  "email-placeholder": "Ipasok ang iyong Email",
+  "reset": "i-reset",
+  "submit": "ipasa"
+}

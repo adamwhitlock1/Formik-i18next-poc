@@ -13,7 +13,7 @@ const App = () => {
   const href = "#";
   return (
     <div className="app">
-      <h1>{t("headerText")}</h1>
+      <h1>{t("form-name")}</h1>
 
       <Formik
         initialValues={{ email: "" }}
@@ -42,11 +42,11 @@ const App = () => {
           return (
             <form onSubmit={handleSubmit}>
               <label htmlFor="email" style={{ display: "block" }}>
-                {t("emailLabel") || "Email"}
+                {t("email")}
               </label>
               <input
                 id="email"
-                placeholder={t("emailPlaceHolder")}
+                placeholder={t("email-placeholder")}
                 type="text"
                 value={values.email}
                 onChange={handleChange}
@@ -77,8 +77,12 @@ const App = () => {
                   English
                 </a>
                 &nbsp;
-                <a href={href} onClick={() => i18n.changeLanguage("fr")}>
-                  Francais
+                <a href={href} onClick={() => i18n.changeLanguage("es")}>
+                  Español
+                </a>
+                &nbsp;
+                <a href={href} onClick={() => i18n.changeLanguage("tl")}>
+                  Tagalog
                 </a>
               </div>
               <DisplayFormikState {...props} />
