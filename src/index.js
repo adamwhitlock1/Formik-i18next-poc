@@ -1,22 +1,23 @@
 // Helper styles for demo
-import "./helper.css";
-import { DisplayFormikState } from "./helper";
-import { useTranslation } from "react-i18next";
-import "./i18next";
-import React from "react";
-import { render } from "react-dom";
-import { Formik } from "formik";
-import * as Yup from "yup";
+import './helper.css';
+import '@department-of-veterans-affairs/formation/dist/formation.min.css';
+import { DisplayFormikState } from './helper';
+import { useTranslation } from 'react-i18next';
+import './i18next';
+import React from 'react';
+import { render } from 'react-dom';
+import { Formik } from 'formik';
+import * as Yup from 'yup';
 
 const App = () => {
   const { t, i18n } = useTranslation();
-  const href = "#";
+  const href = '#';
   return (
     <div className="app">
-      <h1>{t("form-name")}</h1>
+      <h1>{t('form-name')}</h1>
 
       <Formik
-        initialValues={{ email: "" }}
+        initialValues={{ email: '' }}
         onSubmit={(values, { setSubmitting }) => {
           setTimeout(() => {
             alert(JSON.stringify(values, null, 2));
@@ -25,8 +26,8 @@ const App = () => {
         }}
         validationSchema={Yup.object().shape({
           email: Yup.string()
-            .email(t("email-invalid"))
-            .required(t("email-required"))
+            .email(t('email-invalid'))
+            .required(t('email-required')),
         })}
       >
         {(props) => {
@@ -40,12 +41,12 @@ const App = () => {
             handleBlur,
             handleSubmit,
             handleReset,
-            setFieldTouched
+            setFieldTouched,
           } = props;
 
           // this is needed to make sure validation messages
           // are updated when the language is changec
-          i18n.on("languageChanged", () => {
+          i18n.on('languageChanged', () => {
             Object.keys(errors).forEach((fieldName) => {
               setFieldTouched(fieldName);
             });
@@ -53,20 +54,20 @@ const App = () => {
 
           return (
             <form onSubmit={handleSubmit}>
-              <label htmlFor="email" style={{ display: "block" }}>
-                {t("email")}
+              <label htmlFor="email" style={{ display: 'block' }}>
+                {t('email')}
               </label>
               <input
                 id="email"
-                placeholder={i18n.t("email-placeholder")}
+                placeholder={i18n.t('email-placeholder')}
                 type="text"
                 value={values.email}
                 onChange={handleChange}
                 onBlur={handleBlur}
                 className={
                   errors.email && touched.email
-                    ? "text-input error"
-                    : "text-input"
+                    ? 'text-input error'
+                    : 'text-input'
                 }
               />
               {errors.email && touched.email && (
@@ -79,21 +80,21 @@ const App = () => {
                 onClick={handleReset}
                 disabled={!dirty || isSubmitting}
               >
-                {t("reset")}
+                {t('reset')}
               </button>
               <button type="submit" disabled={isSubmitting}>
-                {t("submit")}
+                {t('submit')}
               </button>
               <div>
-                <a href={href} onClick={() => i18n.changeLanguage("en")}>
+                <a href={href} onClick={() => i18n.changeLanguage('en')}>
                   English
                 </a>
                 &nbsp;
-                <a href={href} onClick={() => i18n.changeLanguage("es")}>
+                <a href={href} onClick={() => i18n.changeLanguage('es')}>
                   Español
                 </a>
                 &nbsp;
-                <a href={href} onClick={() => i18n.changeLanguage("tl")}>
+                <a href={href} onClick={() => i18n.changeLanguage('tl')}>
                   Tagalog
                 </a>
               </div>
@@ -106,4 +107,4 @@ const App = () => {
   );
 };
 
-render(<App />, document.getElementById("root"));
+render(<App />, document.getElementById('root'));

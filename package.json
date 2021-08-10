@@ -6,11 +6,14 @@
   "homepage": "https://codesandbox.io/s/zKrK5YLDZ",
   "main": "index.js",
   "dependencies": {
+    "@department-of-veterans-affairs/formation": "^6.16.3",
+    "axios": "^0.21.1",
     "formik": "1.5.2",
     "i18next": "17.0.1",
     "react": "16.8.6",
     "react-dom": "16.8.6",
     "react-i18next": "10.11.0",
+    "translation-check": "^1.0.1",
     "yup": "0.27.0"
   },
   "devDependencies": {
